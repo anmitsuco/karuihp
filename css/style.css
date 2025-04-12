@@ -629,9 +629,9 @@ h6 {
   }
 }
 .footer-nav li a {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:  "Lato", sans-serif;
   text-decoration: none;
-  color: inherit;
+  color: #333333;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
