@@ -509,7 +509,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .footer {
-    padding: 30px 30px 30px;
+    padding: 30px 0;
   }
 }
 
@@ -550,6 +550,11 @@ h6 {
 }
 .footer-logo a img {
   width: 205px;
+}
+@media screen and (max-width: 767px) {
+  .footer-logo a img {
+    width: 120px;
+  }
 }
 .footer-logo a:hover {
   opacity: 0.7;
