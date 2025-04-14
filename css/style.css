@@ -625,26 +625,6 @@ h6 {
   opacity: 0.7;
 }
 
-.footer-address {
-  font-size: 14px;
-  margin-top: 25px;
-}
-@media screen and (max-width: 767px) {
-  .footer-address {
-    margin-top: 16px;
-  }
-}
-
-.footer-tel {
-  font-size: 14px;
-  margin-top: 7px;
-}
-@media screen and (max-width: 767px) {
-  .footer-tel {
-    margin-top: 6px;
-  }
-}
-
 .footer-center {
   width: 50%;
 }
@@ -694,7 +674,7 @@ h6 {
   }
 }
 .footer-nav li a {
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-decoration: none;
   color: #333333;
   -webkit-transition: all 0.3s ease 0s;
