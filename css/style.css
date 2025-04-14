@@ -205,7 +205,7 @@ h6 {
 }
 @media screen and (max-width: 767px) {
   .section-title {
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -226,6 +226,7 @@ h6 {
   }
 }
 .message-content p {
+  font-family: "Lato", sans-serif;
   margin-bottom: 40px;
   line-height: 1.9;
 }
@@ -355,12 +356,6 @@ h6 {
   color: #6F7579;
   margin-top: 20px;
 }
-@media screen and (max-width: 767px) {
-  .card-title {
-    font-size: 18px;
-  }
-}
-
 
 .card-text {
   font-family: "Lato", sans-serif;
@@ -488,9 +483,6 @@ h6 {
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
-.qa-box.is-open {
-  border: 1px solid #fe8b8a;
-}
 
 .qa-box_q {
   color: #fff;
@@ -498,7 +490,8 @@ h6 {
   border: 1px solid #ccc;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
-  font-weight: 700px;
+  border-radius: 8px 8px 0 0;
+  font-weight: 700;
   padding: 12px 56px;
   position: relative;
 }
@@ -558,11 +551,12 @@ h6 {
   color: #333333;
   line-height: 1.5;
   padding: 16px 30px 16px 20px;
-  max-height: 0;
+  border-radius: 0 0 8px 8px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  max-height: 0.9s ease;
+  padding: 0.8s ease;
+  margin: 0.8s ease;
   will-change: max-height, opacity;
 }
 .qa-box_a.is-open {
