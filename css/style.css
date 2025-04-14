@@ -478,6 +478,10 @@ h6 {
   margin-top: 24px;
 }
 
+.qa-box.is-open .qa-box_q {
+  border-radius: 4px 4px 0 0;
+}
+
 .qa-box_q {
   color: #fff;
   background: #fe8b8a;
@@ -487,9 +491,7 @@ h6 {
   padding: 12px 56px;
   position: relative;
 }
-.qa-box_q.is-open {
-  border: none;
-}
+
 .qa-box_q::before {
   content: "Q";
   position: absolute;
