@@ -486,7 +486,7 @@ h6 {
   color: #fff;
   background: #fe8b8a;
   transition: border 0.3s ease;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 4px 4px;
   font-weight: 700;
   padding: 12px 56px;
   position: relative;
