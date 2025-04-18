@@ -70,39 +70,6 @@ navLinks.forEach(link => {
   });
 });
 
-// QAアコーディオン（1つだけ開くver）
-const qaQuestions = document.querySelectorAll('.qa-box_q');
-
-qaQuestions.forEach(question => {
-  question.addEventListener('click', () => {
-    const answer = question.nextElementSibling;
-    const qaBox = question.closest('.qa-box');
-    const icon = question.querySelector('.qa-box_icon');
-
-    const isOpen = answer.classList.contains('is-open');
-
-    // ✅ すべて閉じる（他のaも含めて）
-    document.querySelectorAll('.qa-box_a').forEach(a => {
-      a.style.maxHeight = null;
-      a.classList.remove('is-open');
-    });
-    document.querySelectorAll('.qa-box').forEach(b => b.classList.remove('is-open'));
-    document.querySelectorAll('.qa-box_icon').forEach(i => i.classList.remove('is-open')); // ← ★これ追加！
-
-    // ✅ 今クリックしたのが開いてなかった場合だけ、開く
-    if (!isOpen) {
-      answer.classList.add('is-open');
-      if (qaBox) qaBox.classList.add('is-open');
-      if (icon) icon.classList.add('is-open'); // ← ★これも追加！
-
-      answer.style.maxHeight = '0px';
-      requestAnimationFrame(() => {
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      });
-    }
-  });
-});
-
 // スクロールで表示する要素（fade-in）を一括監視
 const fadeEls = document.querySelectorAll('.fade-in');
 
@@ -128,3 +95,30 @@ drawerLinks.forEach(link => {
   });
 });
 
+const qaQuestions = document.querySelectorAll('.qa-box_q');
+
+qaQuestions.forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
+    const qaBox = question.closest('.qa-box');
+    const icon = question.querySelector('.qa-box_icon');
+    const isOpen = answer.classList.contains('is-open');
+
+    // 他をすべて閉じる
+    document.querySelectorAll('.qa-box_a').forEach(a => {
+      a.classList.remove('is-open');
+      a.style.maxHeight = null; // ←★コレが重要！
+    });
+    document.querySelectorAll('.qa-box').forEach(b => b.classList.remove('is-open'));
+    document.querySelectorAll('.qa-box_icon').forEach(i => i.classList.remove('is-open'));
+
+    // 今クリックしたやつを開く
+    if (!isOpen) {
+      answer.classList.add('is-open');
+      qaBox.classList.add('is-open');
+      icon.classList.add('is-open');
+
+      answer.style.maxHeight = answer.scrollHeight + 40 + "px";
+    }
+  });
+});
