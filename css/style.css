@@ -896,7 +896,8 @@ h6 {
   color: #707070;
   padding: 18px 20px;
   text-decoration: none;
-  border-bottom: #707070 dotted 1px;
+  border-bottom: #878787 solid 1px;
+  opacity: .9;
   position: relative;
 }
 
