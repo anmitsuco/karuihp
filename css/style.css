@@ -482,6 +482,7 @@ h6 {
 .qa-box {
   overflow: hidden;
   background: #fff;
+  border-radius: 4px;
 }
 
 .qa-box_q {
@@ -489,7 +490,6 @@ h6 {
   background: #fff;
   font-weight: 700;
   padding: 16px 20px;
-  border-radius: 4px;
   position: relative;
 }
 .qa-box_q.is-open {
