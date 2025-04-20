@@ -549,10 +549,9 @@ h6 {
   line-height: 1.5;
   padding: 0 30px 0 20px;
   overflow: hidden;
-  opacity: 0;
   max-height: 0;
-  will-change: max-height, opacity;
-  -webkit-transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  will-change: max-height;
+  -webkit-transition: max-height 0.4s ease, padding 0.4s ease;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 .qa-box_a.is-open {
