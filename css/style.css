@@ -489,7 +489,10 @@ h6 {
   font-weight: 700;
   padding: 16px 20px;
   border-radius: 4px;
-  position: relateve;
+  position: relative;
+}
+.qa-box_q.is-open {
+  border-radius: 4px 4px 0 0;
 }
 
 .qa-box_icon {
@@ -537,7 +540,7 @@ h6 {
   font-weight: 400;
   color: #333333;
   line-height: 1.5;
-  padding: 16px 20px;
+  padding: 0 30px 0 20px;
   overflow: hidden;
   max-height: 0;
   will-change: max-height;
@@ -546,8 +549,8 @@ h6 {
 }
 .qa-box_a.is-open {
   border-radius: 0 0 4px 4px;
-  padding: 16px 20px;
   max-height: 500px;
+  padding: 16px 20px;
 }
 
 .footer {
