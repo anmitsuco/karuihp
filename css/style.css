@@ -489,7 +489,7 @@ h6 {
   color: #fe8b8a;
   background: #fff;
   font-weight: 700;
-  padding: 16px 20px;
+  padding: 16px 40px 16px 20px;
   position: relative;
 }
 .qa-box_q.is-open {
