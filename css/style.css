@@ -553,12 +553,12 @@ h6 {
   max-height: 0;
   will-change: max-height, opacity;
   -webkit-transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
-  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 .qa-box_a.is-open {
   border-radius: 0 0 4px 4px;
-  opacity: 1;
   padding: 16px 30px 16px 20px; /* 開いたときだけ padding を戻す */
+  max-height: 500px;
 }
 
 .qa-box_content {
